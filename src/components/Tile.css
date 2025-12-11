@@ -1,0 +1,42 @@
+.tile {
+    width: 44px;
+    height: 56px;
+    background: var(--bg-tile);
+    border-radius: 8px;
+    box-shadow:
+        0 4px 0 var(--bg-tile-shadow),
+        0 6px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.tile:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.tile-board {
+    /* Absolute positioning handled in JS */
+}
+
+.tile-bar {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blocked {
+    background: #bdc3c7;
+    cursor: default;
+    color: #7f8c8d;
+}
+
+.blocked .tile-inner {
+    opacity: 0.3;
+}

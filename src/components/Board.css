@@ -1,0 +1,50 @@
+.board-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    padding-bottom: 20px;
+}
+
+.board-layers {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+    /* Tilt slightly for 3D effect */
+    transition: transform 0.5s;
+}
+
+.game-over,
+.game-victory {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 2000;
+    pointer-events: none;
+    border: 3px solid white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
