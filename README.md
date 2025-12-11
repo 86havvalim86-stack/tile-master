@@ -2,6 +2,10 @@
 
 React ve TypeScript ile geliştirilmiş, modern arayüze sahip sürükleyici bir 3'lü taş eşleştirme (match-3) bulmaca oyunu.
 
+## Canlı Demo
+
+https://86havvalim86-stack.github.io/tile-master/
+
 ## Değişiklikler ve Özellikler
 
 React, TypeScript ve Vite kullanılarak geliştirilmiş, performanslı ve modern bir taş eşleştirme oyunu. Oyuncular, oyun tahtasındaki taşları aşağıdaki toplama alanına taşıyarak aynı sembole sahip 3 taşı eşleştirmeye ve tahtayı temizlemeye çalışırlar.
@@ -28,7 +32,6 @@ Projeyi yerel ortamınızda çalıştırmak için:
 ```bash
 # Projeyi klonlayın
 git clone https://github.com/kullaniciadi/tile-master-game.git
-https://86havvalim86-stack.github.io/tile-master/
 # Proje dizinine gidin
 cd tile-master-game
 
