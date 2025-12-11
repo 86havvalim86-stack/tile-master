@@ -28,7 +28,7 @@ Projeyi yerel ortamınızda çalıştırmak için:
 ```bash
 # Projeyi klonlayın
 git clone https://github.com/kullaniciadi/tile-master-game.git
-
+https://86havvalim86-stack.github.io/tile-master/
 # Proje dizinine gidin
 cd tile-master-game
 
